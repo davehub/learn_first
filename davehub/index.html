@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bar de navigation</title>
+    <link rel="stylesheet" href="/davehub/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>projet html/css</title>
   </head>
   <body>
     <!-- ici c'est la partie de la navigation -->
     <nav class="navbar">
-      <ul>
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#about">A propos</a></li>
-        <li><a href="#work">Tache</a></li>
-        <li><a href="#resume">Bilan</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home">Accueil</a></li>
+        <li class="nav-item"><a href="#about">À propos</a></li>
+        <li class="nav-item"><a href="#services">Services</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
     <!-- ici c'est la section a propos -->
 
-    <section id="about">
+    <section id="about" class="about">
       <h2>A propos</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -32,7 +38,7 @@
     </section>
     <!-- ici c'est la section pour la tache -->
 
-    <section id="work">
+    <section id="work" class="work">
       <h2>Tache</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -46,7 +52,7 @@
     </section>
     <!-- ici c'est la section du bilan -->
 
-    <section id="resume">
+    <section id="resume" class="resume">
       <h2>Bilan</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -60,17 +66,19 @@
     </section>
     <!-- ici c'est la section pour le contact -->
 
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2>Contact</h2>
-      <form action="" method="post">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" required></textarea><br /><br />
-        <input type="submit" value="Submit" />
-        <input type="submit" value="Submit" />
+      <form class="user-form">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Envoyer</button>
       </form>
     </section>
     <!-- ici nous somme dans la partie du pied de page -->
